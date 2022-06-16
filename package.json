@@ -1,0 +1,11 @@
+{
+  "name": "junho2022-estudo-mongo-docker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Marcelovqvd/junho2022_Estudo_MongoDB_Docker.git",
+  "author": "Marcelo <marcelovqvd@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js"
+  }
+}
