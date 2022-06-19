@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 const { DB_USER, DB_PASS, DB_HOST, DB_PORT, DB_NAME } = process.env
 
 mongoose.connect(
-  `mongodb://127.0.0.1:27017/?authSource=admin`,
+  `mongodb://${DB_USER}:${DB_PASS}@${DB_HOST}:${DB_PORT}/${DB_NAME}?authSource=admin`,
   {
     useNewUrlParser: true,
   }
