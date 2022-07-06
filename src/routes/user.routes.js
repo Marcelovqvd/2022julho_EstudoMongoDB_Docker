@@ -1,19 +1,24 @@
 import { Router } from 'express'
-import { UserModel } from '../model/user.js'
+import { BookModel } from '../model/book.js'
 
 const routes = Router()
 
 routes.post("/", async (request, response) => {
-  const user = await UserModel.create({
-    name: 'Marcelo'
+  const { title, author, hidden } = request.body
+
+  const user = await BookModel.create({
+    title, 
+    author,
+    date: new Date(),
+    hidden
   })
-  console.log(user)
+
   return response.json(user)
 })
 
 routes.get("/", async (request, response) => {
-  const user = await UserModel.find()
-  console.log(user.name)
+  const user = await BookModel.find()
+
   return response.json(user)
 })
 
