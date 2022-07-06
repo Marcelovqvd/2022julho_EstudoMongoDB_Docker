@@ -1,5 +1,6 @@
-# Julho de 2022 - MongoDB & Docker
-Estudo sobre desenvolvimento de API Rest com MongoDB e Docker
+# Estudo sobre desenvolvimento de API Rest com MongoDB e Docker
+
+### Tecnologias utilizadas:
 
 * Javascript
 * yarn
@@ -13,7 +14,7 @@ Estudo sobre desenvolvimento de API Rest com MongoDB e Docker
 * Docker-compose
 * Makefile
 
-## Para excutar o projeto
+## Para executar o projeto
  - clonar este repositório
  - executar o comando yarn
  - executar o comando make up
